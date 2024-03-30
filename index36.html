@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>index36</title>
+  </head>
+  <body>
+    <script>
+			let userName = 'Путин';
+			function showMessage(){
+			  userName = 'Меркель'; // (1) присвоение во внешнюю переменную
+				let message = 'Привет, я ' + userName;
+				alert(message);
+			}
+			showMessage();
+			alert(userName);
+		</script>
+  </body>
+</html>

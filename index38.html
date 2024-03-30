@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>index38</title>
+  </head>
+  <body>
+    <script>
+			function showMessage(from, text){
+				if (text == undefined){
+					text = 'текст не передан';
+				}
+				alert(from + ": " + text);
+			}
+			showMessage("Виталий Валентинович", "Привет!"); //Виталий Валентинович: Привет!
+			showMessage("Виталий Валентинович"); //Виталий Валентинович: текст не передан 
+		</script>
+  </body>
+</html>

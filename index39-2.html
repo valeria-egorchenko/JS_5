@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>index39-2</title>
+  </head>
+  <body>
+    <script>
+		let a = prompt("Введите a:", "значение переменной a");
+      	while (isNaN(a) || a.length > 50) {
+        	alert("Вводим только цифры");
+        	a = prompt("Введите a:", "значение переменной a");
+      	}
+      	let b = prompt("Введите b:", "значение переменной b");
+      	while (isNaN(b) || b.length > 50) {
+        	alert("Вводим только цифры");
+        	b = prompt("Введите b:", "значение переменной b");
+      	}
+	  	let c = prompt("Введите c:", "значение переменной c");
+      	while (isNaN(c) || c.length > 50) {
+        	alert("Вводим только цифры");
+        	c = prompt("Введите c:", "значение переменной c");
+      	}
+		let calcD = (a, b, c) => {
+			return b * b - 4 * a * c;
+		}; // Функция возвращает дискриминант
+		let discriminant = calcD(a, b, c);
+		let res = 'D=' + discriminant;
+				if (discriminant < 0)
+					res = res + '\n Для отрицательного D не существует вещественных корней';
+				if (discriminant == Infinity || isNaN(discriminant))
+					res = "Слишком большое число";
+		alert(res);
+		</script>
+  </body>
+</html>

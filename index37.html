@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>index37</title>
+  </head>
+  <body>
+    <script>
+			function showMessage(from, text){
+				from = '**' + from + '**'; // (1), красиво оформили from
+				alert(from +'\n\n' + text);
+				}
+			let from = 'Дмитрий Анатольевич Медведев', msg = 'Привет'; //(2)
+			showMessage(from, msg); //значения будут скопированы в параметры
+			alert(from);	// перезапись в строке (1) не позволит на внешнюю переменную
+		</script>
+  </body>
+</html>
